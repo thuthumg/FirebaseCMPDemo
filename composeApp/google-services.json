@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135464120442",
+    "project_id": "socialmediaproject-cf14a",
+    "storage_bucket": "socialmediaproject-cf14a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135464120442:android:c747a3ccb9050a4cb4cbc3",
+        "android_client_info": {
+          "package_name": "org.example.firebasecmp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3SFUZNp4QX8hb5o5Xyn5ha9Ww_VKD4Sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
