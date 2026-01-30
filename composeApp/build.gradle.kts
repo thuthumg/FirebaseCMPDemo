@@ -8,12 +8,13 @@ plugins {
     alias(libs.plugins.composeCompiler)
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
+    alias(libs.plugins.jetbrains.kotlin.serialization)
 }
 
 kotlin {
     androidTarget {
         compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_11)
+            jvmTarget.set(JvmTarget.JVM_17)
         }
     }
     
@@ -31,6 +32,7 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -45,7 +47,15 @@ kotlin {
             implementation("dev.gitlive:firebase-database:2.3.0")
             implementation("dev.gitlive:firebase-firestore:2.3.0")
             implementation("dev.gitlive:firebase-auth:2.3.0")
+
+
             implementation(libs.material.icons.core)
+            implementation(libs.kotlinx.serialization.json)
+
+            implementation(libs.jetbrains.compose.navigation)
+            implementation(libs.kotlinx.datetime)
+
+
 
         }
         iosMain
